@@ -48,15 +48,5 @@ public class User {
 	
 	@Column(name = "age")
 	private int age;
-//	
-//	@ManyToOne(fetch = FetchType.LAZY)
-//	@JoinColumn(name = "dept_id", insertable = false, updatable = false)
-//	@Fetch(FetchMode.JOIN)
-//	private Department department;
-	
-	@OneToMany(targetEntity = Product.class,cascade = CascadeType.ALL)
-    @JoinColumn(name ="cp_fk",referencedColumnName = "id")
-    private List<Product> products;
-
 		
 }
